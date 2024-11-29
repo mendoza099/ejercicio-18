@@ -1,0 +1,94 @@
+.nav-links{
+    display: flex;
+    list-style: none; 
+    align-items: center;
+}
+.nav-links a {
+    text-decoration: none; 
+    color: inherit; 
+    margin-right: 30px; 
+    font-size: 20px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Tooltip Base */
+.tooltip {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+  }
+  
+  .tooltip::after {
+    content: attr(data-tooltip); /* Muestra el texto del atributo personalizado */
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #86b2e9;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 37%;
+}
+.nav-links a:hover{
+background-color: #0474FC;
+transition: calc(1s);
+padding: 20px;
+border-radius: 6%;
+color: white;
+}
+.imgprincipal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img1{
+    width: 90%;
+    height: 500px;
+    border-radius: 8px;
+    
+}
+.parte1{
+    display: flex;
+    align-items: center;
+    margin-top: 8%;
+    gap: 40px;
+    max-width: 100%;
+}
+.texto{
+    width: 45%;
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 90px;
+    height: 300px; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+.img2{
+    width: 120%;
+    height: 450px;
+    border-radius: 8px;
+}
